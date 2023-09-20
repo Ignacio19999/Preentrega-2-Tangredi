@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+   font-family:'Titillium Web', sans-serif;
+   background:rgb(0, 0, 0);
+}
+header {
+    background-color:rgb(192, 12, 12);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+header .logo{
+    position: relative;
+    left: 40px;
+    bottom: 5px;
+}
+header .logo img {
+    height: 90px;
+}
+header .nav-shop {
+    display:block;
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding : 0 20px;
+    line-height: 60px;
+}
+.nuestro-menu{
+    position: relative;
+    padding: 80px;
+    margin-top: 25px;
+    height: 40px;
+    text-align: center;
+}
+.nuestro-menu h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color:#f8bc07;
+}
+.nuestro-menu p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.title-burger {
+    display: flex;
+    margin-bottom: 2%;
+    margin-top: 4%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 70px;
+}
+.title-burger h1 {
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:rgb(248, 0, 0);
+}
+.container {
+    display: grid;
+    position: relative;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.container .card{
+    text-align: center;
+    background-color: #ffbc0e;
+}
+.container .card-name{
+    border-bottom: 2px solid rgb(252, 0, 21);
+}
+.container .card-name h6{
+    font-size: 35px;
+    font-weight: 1000;
+    color:#ff6702;
+}
+.container .content .title{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+.container .content .list {
+    padding: 15px;
+    border-bottom: 2px solid red;
+    text-decoration: underline;
+}
+.container .action {
+    position: relative;
+    left: 77px;
+    padding: 10px;
+    background-color: rgb(252, 0, 21);
+    width: 50%;
+}
+.container .action a {
+    color: #fff;
+    text-decoration: none;
+}
+.container .action:hover {
+    background: black;
+}
+.pie-de-pagina{
+    width: 100%;
+    margin-top: 30px;
+    background-color:rgb(192, 12, 12);
+}
+.pie-de-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-de-pagina section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-de-pagina img {
+    width: 150px;
+    border-radius: 50px;
+}
+.pie-de-pagina .box h2 {
+    color:#e2f1f8;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-de-pagina .box p {
+    color:#e2f1f8;
+    margin-bottom: 10px;
+}
+.pie-de-pagina .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+}
+.pie-de-pagina .grupo-2 {
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-de-pagina .grupo-2 small {
+    font-size:15px;
+}
+.pie-de-pagina .grupo-1 .red-social a:hover{
+    color:#ffbc0e;
+ }
+.pie-de-pagina .grupo-1 .box img:hover{
+    transform: scale(1.2);  
+}
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+        margin: 0;
+    }
+    .logo img {
+        height: 60px;
+    }
+    header .nav-shop {
+        display: block;
+    }
+    .nuestro-menu {
+        position: relative;
+        bottom: 70px;
+        margin-left: 30px;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        margin-left: 20px;
+    }
+    .pie-de-pagina {
+        .grupo-1 {
+            gap: 1%;
+        }
+    }
+}
+@media (max-width: 560px) {
+    body {
+        margin: 0;
+    }
+    .nuestro-menu {
+        margin-bottom: 50px;
+    }
+    .title-burger {
+        h1 {
+            font-size: 120px;
+        }
+    }
+}
+@media (max-width: 420px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        width: 100%;
+        
+        img {
+            width: 100px;
+        }
+    }
+    .nuestro-menu {
+        justify-content: stretch;
+        h2 {
+            font-size: 25px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    .title-burger {
+        h1 {
+            font-size: 80px;
+        }
+    }
+    .container {
+        .card {
+            width: 280px;
+            overflow-x: hidden;
+            
+            img {
+                width: 280px;
+                margin-right: 30px;
+            }
+        }
+        .prices {
+            thead{
+                position: relative;
+                right: 10px;
+            }
+            tbody {
+                position: relative;
+                right: 10px;
+            }
+        }
+    }
+}
